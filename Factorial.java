@@ -1,3 +1,5 @@
+Approach 1
+    
 import java.util.*;
 
 public class Main{
@@ -12,5 +14,24 @@ public class Main{
        else{
            return n * factorial(n - 1);
        }
+    }
+}
+
+Approach 2
+    
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        System.out.println(factorial(num));
+    }
+    public static long factorial(int n){
+       long fact = 1;
+        for(int i = 1; i <= n; i++){
+             fact = fact * i;
+        }
+        return fact;
     }
 }
